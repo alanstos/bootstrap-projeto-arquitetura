@@ -1,1 +1,0 @@
-# bootstrap-projeto-arquitetura
