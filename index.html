@@ -10,13 +10,56 @@
 
 	<title>Casa conosco - arquitetura</title>
 
-	<style type="text/css">
+	<style type="text/css">	
 	
 	</style>
 </head>
 <body>
 
-	<section class="container">
+	<header>
+		<nav class="navbar navbar-default">
+
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+
+				    <button type="button" id="bt-navbar-menu" class="navbar-toggle collapsed" 
+										    data-toggle="collapse" 
+										    data-target="#navbar-menu" 
+										    aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        
+				     </button>
+
+				     <a class="navbar-brand" href="#">Site Casa conosco</a>
+
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="#sobre-nos">Sobre Nós</a></li>
+						<li><a href="#nossos-projetos">Nossos Projetos</a></li>
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#video">Vídeo</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>	
+				</div>
+
+				
+			</div>
+		</nav>
+
+		<div class="banner-header">
+    		<h1>TopCasaFina Arquitetura</h1>
+    		<p>Projetando a casa dos sonhos desde 2000 A.C</p>
+    		<button class="btn btn-primary btn-lg"> Contate-nos agora</button>
+    	</div>		
+	</header>
+
+	<section id="sobre-nos" class="container">
 		<h2>Sobre nós</h2>
 
 		<img class="img-responsive" src="img/empresa-min.jpg" />
@@ -77,7 +120,7 @@
 	  </div>
 	</section>	
 
-	<section class="container">
+	<section id="nossos-projetos" class="container">
 
 		<h2>Nossos Projetos</h2>
 
@@ -123,9 +166,11 @@
 
 	</section>
 
-	<section>
+	<section id="depoimentos">
 
-		<h2 class="container titulo-depoimento">Depoimentos dos clientes</h2>
+		<div class="titulo-depoimento">
+			<h2 class="container">Depoimentos dos clientes</h2>
+		</div>
 
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
@@ -137,28 +182,28 @@
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
+			    <figure class="item active">
 			      <img src="img/depoimentos/depoimento0.png" alt="0">
-			      <div class="carousel-caption">
+			      <figcaption  class="carousel-caption">
 			       <h3>Caio Souza</h3> 
 			       <p>Ótima estrutura</p>
-			      </div>
-			    </div>
-			    <div class="item">
+			      </figcaption >
+			    </figure>
+			    <figure class="item">
 			      <img src="img/depoimentos/depoimento1.png" alt="1">
-			      <div class="carousel-caption">
+			      <figcaption class="carousel-caption">
 			        <h3>Bruno Souza</h3> 
 			        <p>Estrutura muito boa</p>
-			      </div>
-			    </div>
-			    <div class="item">
+			      </figcaption>
+			    </figure>
+			    <figure class="item">
 			      <img src="img/depoimentos/depoimento2.png" alt="2">
-			      <div class="carousel-caption">
+			      <figcaption class="carousel-caption">
 			        <h3>Carla Souza</h3> 
 			        <p>Boa estrutura</p>
-			      </div>
-			    </div>    
-			    ...
+			      </figcaption>
+			    </figure>    
+			    
 			  </div>
 
 			  <!-- Controls -->
@@ -174,8 +219,99 @@
 
 	</section>
 
+	<section id="video" class="container">
+
+		<h2>Vídeo Institucional</h2>	
+
+		<!-- 16:9 aspect ratio -->
+		<div class="embed-responsive embed-responsive-16by9">
+		  <iframe class="embed-responsive-item" src="https://youtu.be/i_3Pv1Aygel" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	</section>
+
+	<section id="contato" class="container">
+
+		<h2>Contato</h2>
+		<p>Entre em contato conosco</p>
+
+		<form>
+
+			<div class="form-group">
+				<label for="contato-nome">Nome</label>
+				<input type="text" class="form-control" id="contato-nome" placeholder="Seu nome">
+			</div>
+			<div class="form-group">
+				<label for="contato-email">Email</label>
+				<div class="input-group">
+					<span class="input-group-addon">@</span>
+					<input type="email" class="form-control" id="contato-email" placeholder="Seu e-mail">
+				</div>
+			</div>	
+
+			<div class="grupo-radio">
+				<div class="radio">
+
+					<label>
+						<input type="radio" name="pessoa-tipo" value="pf" checked> </input>Pessoa fisica
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="pessoa-tipo" value="pj">  </input>Pessoa juridica		
+					</label>		  
+			
+				</div>	
+			</div><!-- 
+			--><div class="contato-select">
+				<select class="form-control">
+				    <option disabled selected>Tipo de Situação</option>
+				    <option>Casa</option>
+				    <option>Apartamento</option>
+				    <option>Mansão</option>
+				</select>	
+			</div>
+
+			<button class="btn btn-primary" type="submit">Enviar</button>	
+
+		</form>
+
+	</section>
+
+	<footer>
+		<address>
+		    <strong>TopCasaFina Arquitetura</strong><br />
+		    Rua Vergueiro, 3185, Vila Mariana<br />
+		    São Paulo, SP<br />
+		    Tel: (11) 5571-2751 ou 5083-3884<br />
+		</address>	
+		<address>
+			<!--Email: <a href="mailto:#">contato.topcasafina@alura.com.br</a> -->
+			Email: contato.topcasafina@alura.com.br
+		</address>	
+	</footer>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!--<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+		$('.banner-header').on('click',function(){	
+			console.log('clickou no hambuger');
+
+		});
+
+		$('#navbar-menu').on('hidden.bs.collapse',function(){	
+			console.log('hidden ');
+
+		});	
+
+		$('#navbar-menu').on('show.bs.collapse',function(){	
+			console.log('show ');
+
+		});			
+
+	</script>
 </body>
 </html>

@@ -3,10 +3,62 @@
 }
 
 .titulo-depoimento {
-	background-color: #2211DD;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	font-size: 16pt;
+	background-color: #0275D8;
 	color:#FFF;
-	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.grupo-radio, .contato-select  {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+.grupo-radio .radio:first-child {
+	margin-top: 0px;
+}
+
+
+footer {
+    background-color: #333;
+    color:#FFF;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer address:last-child {
+	margin-bottom: 0;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+header {
+    background-image: url(../img/castelo-min.jpg);
+    background-size: cover; 
+    background-position:top center;
+    height: 100%;
+    position: relative;
+}
+
+.banner-header {
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	width: 80%;
+	border-radius: 8px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
