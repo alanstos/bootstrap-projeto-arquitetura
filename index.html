@@ -19,7 +19,7 @@
 	<header>
 		<nav class="navbar navbar-default">
 
-			<div class="container-fluid">
+			<div class="container">
 
 				<div class="navbar-header">
 
@@ -52,11 +52,13 @@
 			</div>
 		</nav>
 
-		<div class="banner-header">
-    		<h1>CasaConosco Arquitetura</h1>
-    		<p>Projetando a casa dos sonhos desde sempre</p>
-    		<a href="#contato" class="btn btn-primary btn-lg"> Contate-nos agora</a>
-    	</div>		
+		<div class="container banner-header-wrapper">
+			<div class="banner-header">
+	    		<h1>CasaConosco Arquitetura</h1>
+	    		<p>Projetando a casa dos sonhos desde sempre</p>
+	    		<a href="#contato" class="btn btn-primary btn-lg">Contate-nos agora</a>
+	    	</div>		
+    	</div>
 	</header>
 
 	<section id="sobre-nos" class="container">
@@ -130,7 +132,7 @@
 
 		<div class="row">
 
-			<div class="col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 			    <figure class="thumbnail">
 			      <img src="img/projetos/casa-castelo-min.png" alt="Casa castelo">
 			      <figcaption class="caption">
@@ -140,7 +142,7 @@
 			    </figure>	
 		    </div>
 
-			<div class="col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 			    <figure class="thumbnail">
 			      <img src="img/projetos/casa-lago.png" alt="Casa lago">
 			      <figcaption class="caption">
@@ -150,7 +152,7 @@
 			    </figure>	
 		    </div>
 
-			<div class="col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 			    <figure class="thumbnail">
 			      <img src="img/projetos/mercado-marapira-min.png" alt="Mercado marapira">
 			      <figcaption class="caption">
@@ -160,7 +162,7 @@
 			    </figure>	
 		    </div>
 
-			<div class="col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 			    <figure class="thumbnail">
 			      <img src="img/projetos/palacio-dionisio-min.png" alt="Palacio dionisio">
 			      <figcaption class="caption">
@@ -170,7 +172,7 @@
 			    </figure>	
 		    </div>	    	
 		    
-			<div class="col-sm-6 col-md-4">		    
+			<div class="col-xs-12 col-sm-6 col-md-4">		    
 			    <figure class="thumbnail">
 			      <img src="img/projetos/residencia-ludi-min.png" alt="Residencia ludi">
 			      <figcaption class="caption">
@@ -237,64 +239,72 @@
 
 	</section>
 
-	<section id="video" class="container">
+	<section id="video-contato" class="container">
 
-		<h2>Vídeo Institucional</h2>	
+		<div class="row">
 
-		<!-- 16:9 aspect ratio -->
-		<div class="embed-responsive embed-responsive-16by9">
-		  
-		  <iframe width="560" height="315" src="https://www.youtube.com/embed/rdi-4cUHT3k" frameborder="0" allowfullscreen></iframe>
-		  
+			<section id="video" class="container col-sm-6">
+
+				<h2>Vídeo Institucional</h2>	
+
+				<!-- 16:9 aspect ratio -->
+				<div class="embed-responsive embed-responsive-16by9">
+				  
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/rdi-4cUHT3k" frameborder="0" allowfullscreen></iframe>
+				  
+				</div>
+
+			</section>
+
+			<section id="contato" class="container col-sm-6">
+
+				<h2>Contato</h2>
+				<p>Entre em contato conosco</p>
+
+				<form>
+
+					<div class="form-group">
+						<label for="contato-nome">Nome</label>
+						<input type="text" class="form-control" id="contato-nome" placeholder="Seu nome">
+					</div>
+					<div class="form-group">
+						<label for="contato-email">Email</label>
+						<div class="input-group">
+							<span class="input-group-addon">@</span>
+							<input type="email" class="form-control" id="contato-email" placeholder="Seu e-mail">
+						</div>
+					</div>	
+
+					<div class="grupo-radio">
+						<div class="radio">
+
+							<label>
+								<input type="radio" name="pessoa-tipo" value="pf" checked> </input>Pessoa fisica
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="pessoa-tipo" value="pj">  </input>Pessoa juridica		
+							</label>		  
+					
+						</div>	
+					</div><!-- 
+					--><div class="contato-select">
+						<select class="form-control">
+						    <option disabled selected>Tipo de Situação</option>
+						    <option>Casa</option>
+						    <option>Apartamento</option>
+						    <option>Mansão</option>
+						</select>	
+					</div>
+
+					<button class="btn btn-primary" type="submit">Enviar</button>	
+
+				</form>
+
+			</section>
+
 		</div>
-
-	</section>
-
-	<section id="contato" class="container">
-
-		<h2>Contato</h2>
-		<p>Entre em contato conosco</p>
-
-		<form>
-
-			<div class="form-group">
-				<label for="contato-nome">Nome</label>
-				<input type="text" class="form-control" id="contato-nome" placeholder="Seu nome">
-			</div>
-			<div class="form-group">
-				<label for="contato-email">Email</label>
-				<div class="input-group">
-					<span class="input-group-addon">@</span>
-					<input type="email" class="form-control" id="contato-email" placeholder="Seu e-mail">
-				</div>
-			</div>	
-
-			<div class="grupo-radio">
-				<div class="radio">
-
-					<label>
-						<input type="radio" name="pessoa-tipo" value="pf" checked> </input>Pessoa fisica
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="pessoa-tipo" value="pj">  </input>Pessoa juridica		
-					</label>		  
-			
-				</div>	
-			</div><!-- 
-			--><div class="contato-select">
-				<select class="form-control">
-				    <option disabled selected>Tipo de Situação</option>
-				    <option>Casa</option>
-				    <option>Apartamento</option>
-				    <option>Mansão</option>
-				</select>	
-			</div>
-
-			<button class="btn btn-primary" type="submit">Enviar</button>	
-
-		</form>
 
 	</section>
 

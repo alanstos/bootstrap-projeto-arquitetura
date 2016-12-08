@@ -65,6 +65,19 @@ header {
 
 }
 
+@media(min-width: 992px){
+	.banner-header {
+		left: 0;
+		width: 50%;
+		transform: translate(0,-80%);
+	}
+
+	.banner-header-wrapper {
+		height: 100%;
+		position: relative;
+	}
+}
+
 header h1 {
     margin-top: 0;
     margin-bottom: 0;
